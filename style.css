@@ -17,6 +17,13 @@ body {
     min-height: 100vh; /* Минимальная высота равна высоте окна браузера */
 }
 
+button {
+    font-size: 1.2rem;
+    border: 3px solid #6972db;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
 /* ===== КОНТЕЙНЕР СТРАНИЦЫ ===== */
 main {
     max-width: 1200px; /* Максимальная ширина контента */
@@ -37,8 +44,7 @@ header {
     font-size: 28px; /* Размер шрифта */
     font-weight: 300; /* Легкое начертание шрифта */
     letter-spacing: 2px; /* Расстояние между буквами */
-    margin: 1rem auto;
-    width: 65vw;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -211,8 +217,8 @@ footer {
 градиентный фон */
     color: white; /* Белый цвет текста */
     text-align: center; /* Выравнивание по центру */
-    padding: 30px; /* Внутренние отступы */
-    margin-top: 50px; /* Отступ сверху */
+    padding: 30px;
+        /* Внутренние отступы */
 }
 
 /*=== ТОВАРЫ ===*/
@@ -279,4 +285,35 @@ section#goods {
     transform: translateY(-3px); /* Поднятие элемента при наведении */
     box-shadow: 0 6px 20px rgba(79, 172, 254, 0.4); /* Увеличение тени при
 наведении */
+}
+
+/*=== КОНТАКТЫ ===*/
+.contact {
+    animation: pulse 3s infinite;
+    border-bottom: 2px solid #6972db7a;
+    box-shadow: 5px 1px 3px #2d325f7a;
+    width: 80%;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact:hover {
+    animation-play-state: paused;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }

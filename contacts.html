@@ -1,18 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <script src="./index.js" defer></script>
     <title>Контакты</title>
+    <style>
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3rem
+        }
+
+        section {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+
+
+    </style>
 </head>
+
 <body>
     <main>
-        <span class="email">valdemar@yaclex.ru</span>
-        <address>Россия, Москва</address>
+        <h1>Контакты</h1>
+        <section>
+            <div class="contact">
+                <span class="contact-label">Почта</span>
+                <span class="email">valdemar@yaclex.ru</span>
+            </div>
+            <div class="contact">
+                <span class="contact-label">Адрес</span>
+                <address>Россия, Москва</address>
+            </div>
+            <div class="contact">
+                <span class="contact-label">Discord</span>
+                <a href="https://discord.com/valdemarcheck" target="_blank">Valdemarcheck (Discord)</a>
+            </div>
+            <div class="contact">
+                <span class="contact-label">GitHub</span>
+                <a href="https://github.com/vladcheck" target="_blank">Vladcheck (GitHub)</a>
+            </div>
+        </section>
         <button>Позвоните мне!</button>
     </main>
     <footer></footer>
 </body>
+
 </html>
