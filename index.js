@@ -1,5 +1,5 @@
 document.body.innerHTML =
-  ` <div id="header"><h1>Мой сайт</h1>
+  ` <header><h1>Мой сайт</h1>
     <nav id="menu">
         <ul>
             <li><a href="index.html">Главная</a></li>
@@ -9,4 +9,4 @@ document.body.innerHTML =
             <li><a href="contacts.html">Контакты</a></li>
         </ul>
     </nav>
-    </div>` + document.body.innerHTML;
+    </header>` + document.body.innerHTML;
