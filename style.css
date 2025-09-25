@@ -3,3 +3,40 @@
     margin: 0px;
     box-sizing: border-box;
 }
+
+:root,body {
+    width: 100vw;
+}
+
+.author {
+    display: block;
+}
+
+main {
+    width: 100%;
+}
+
+section#goods {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.item-card {
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 1rem;
+}
+
+.item-name {
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.item-card > img {
+    width: 200px;
+}
