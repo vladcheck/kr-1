@@ -15,6 +15,13 @@ body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Красивый
 градиентный фон всей страницы */
     min-height: 100vh; /* Минимальная высота равна высоте окна браузера */
+    display: grid;
+        grid-template-rows: auto auto 1fr auto;
+        grid-template-areas:
+            "header"
+            "main"
+            "footer";
+        justify-content: center;
 }
 
 button {
@@ -27,11 +34,16 @@ button {
 /* ===== КОНТЕЙНЕР СТРАНИЦЫ ===== */
 main {
     max-width: 1200px; /* Максимальная ширина контента */
-    margin: 0 auto; /* Центрирование контейнера по горизонтали */
+    margin: 0.5rem 0;
+        /* Центрирование контейнера по горизонтали */
     background: white; /* Белый фон для основного содержимого */
     min-height: 100vh; /* Минимальная высота равна высоте окна браузера */
     box-shadow: 0 0 30px rgba(0,0,0,0.1); /* Легкая тень вокруг всего контента */
     padding: 2rem;
+    min-width: 1000px;
+        max-width: 1400px;
+    
+        grid-area: main;
 }
 
 /* ===== ШАПКА ===== */
@@ -50,6 +62,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 1rem;
+grid-area: header;
 }
 
 /* ===== НАВИГАЦИЯ ===== */
@@ -219,6 +232,7 @@ footer {
     text-align: center; /* Выравнивание по центру */
     padding: 30px;
         /* Внутренние отступы */
+    grid-area: footer;
 }
 
 /*=== ТОВАРЫ ===*/
