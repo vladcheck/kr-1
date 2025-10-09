@@ -1,0 +1,29 @@
+#practice {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: minmax(400px, 500px);
+  gap: 1rem 2rem;
+}
+
+.practice__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 1rem;
+  box-shadow: 2px 6px 7px var(--color-dark), -6px 2px 5px var(--color-accent);
+  transition: all 0.3s ease-out;
+}
+
+.course {
+  display: block;
+  font-style: italic;
+}
+
+.practice__card:hover {
+  transform: scale(1.1);
+}
+
+.practice__card > img {
+  width: 100%;
+}

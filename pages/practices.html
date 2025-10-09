@@ -5,58 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css" />
-    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./practices.css" />
+    <script src="../index.js" defer></script>
     <title>Практики</title>
-    <style>
-        #practice-section {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: minmax(400px, 500px);
-            gap: 1rem 2rem;
-        }
-
-        .practice-card {
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-
-            padding: 1rem;
-            box-shadow: 2px 6px 7px #715bb9a1, -6px 2px 5px #b95bb47e;
-            transition: all 0.3s ease-out;
-        }
-
-        .course {
-            display: block;
-            font-style: italic;
-        }
-
-        .practice-card:hover {
-            transform: scale(1.1);
-        }
-
-        .practice-card>img {
-            width: 100%;
-        }
-
-        .news-card {
-            font-size: 0.6em;
-        }
-    </style>
 </head>
 
 <body>
-    <main>
-        <section id="practice-section">
-            <div class="practice-card">
-                <img src="./assets/practice1.png" alt="practice1">
+    <main class="main">
+        <section class="section" id="practice">
+            <div class="practice__card">
+                <img src="/practice1.png" alt="practice1">
                 <span class="course">1 курс</span>
                 <h2>Statistics Visualizer</h2>
                 <p>Курсовая работа, написанная на C++ в конце первого курса. Минималистичное приложение для анализа
                     данных при помощи графика и числовых метрик.</p>
                 <a href="https://github.com/vladcheck/StatisticsVisualizer_made_by_AI" target="_blank">Ссылка</a>
             </div>
-            <div class="practice-card">
-                <img src="./assets/practice2.png" alt="practice2">
+            <div class="practice__card">
+                <img src="/practice2.png" alt="practice2">
                 <span class="course">2 курс</span>
                 <h2>my-awesome-project</h2>
                 <p>Небольшой учебный сайт, сделанный в рамках "Фронтенд и Бекенд разработки" в сентябре.</p>
@@ -64,7 +30,9 @@
             </div>
         </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <p class="footer__text">&copy; 2024 Мой сайт</p>
+    </footer>
 </body>
 
 </html>

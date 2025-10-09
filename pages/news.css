@@ -1,0 +1,19 @@
+/*=== НОВОСТИ ===*/
+.news__card {
+  background: var(--color-dark);
+  padding: 25px;
+  border-radius: 15px;
+  margin: 30px 0;
+  border-left: 5px solid var(--color-accent);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.news__author {
+  font-style: italic;
+}
+
+.news__card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow);
+}

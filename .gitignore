@@ -1,3 +1,8 @@
 node_modules
 *.pdf
+
+.cursor
 .vscode
+
+package-lock.json
+pnpm-lock.yaml

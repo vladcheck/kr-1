@@ -6,7 +6,7 @@ contactModal.addEventListener("click", (e) => {
   }
 });
 
-const contactButton = document.querySelector(".contact-button");
+const contactButton = document.querySelector(".contact__card-button");
 contactButton.addEventListener("click", () => {
   if (contactModal) {
     console.log("click");
